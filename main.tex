@@ -1,6 +1,19 @@
 \documentclass[a4paper,12pt]{book}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{subcaption}
+\graphicspath{{images/}}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{lipsum}
+\usepackage[colorlinks=true, linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage[nosort]{cleveref}
+
 
 \begin{document}
 
@@ -11,12 +24,17 @@
 \frontmatter
 \maketitle
 \tableofcontents
+\listoffigures
+\listoftables
 
 \mainmatter
-\include{./TeX_files/chapter01}
-\include{./TeX_files/chapter02}
+\include{./tex/chapter01}
+\include{./tex/chapter02}
 
 \backmatter
 % bibliography, glossary and index would go here.
+\include{./tex/bibliography}
+\include{./tex/glossary}
+\include{./tex/index}
 
 \end{document}
